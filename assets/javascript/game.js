@@ -28,3 +28,16 @@ var timeLeft = 30;
     }
 
 // Variable for questions. THis may be replaced with an API or a JSON file. 
+
+let questions = [
+    {
+        question : "What does HTML stand for?",
+        optionA : "hyper text markup language",
+        optionB : "laksdflkajsdflj",
+        optionC : "lllllllllalalalalal",
+        optionD : "boobs",
+        correct : "A"
+    },
+    
+]
+
