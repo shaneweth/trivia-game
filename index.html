@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- This will be the Heading of the Page -->
+
+    </header>
+    <main>
+
+        <!-- This will have 2 sections -->
+        <div id="start-button"> Click to Play! </div>
+        <!-- Section 1: A timer that decrements from 30 seconds -->
+           <!-- (#quiz) will be set to "display: none;" until start -->
+        
+        
+        
+           <div id="quiz"></div> 
+            <div id="question"><p> Question </p></div>
+                <div id="timerDemo"></div>
+                <div id="options">
+
+                    <div class="option" id="a" onclick="checkAnswer('A')">A</div>
+                    <div class="option" id="b" onclick="checkAnswer('B')">B</div>
+                    <div class="option" id="c" onclick="checkAnswer('C')">C</div>
+                    <div class="option" id="d" onclick="checkAnswer('D')">D</div>
+
+                </div>
+
+
+
+        <!-- Section 2: A Question with 4 potential answers -->
+
+    </main>
+    <footer>
+
+        <!-- Footer for style and Possible Persistant Info -->
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
+
+    <script src="assets/javascript/game.js">
+
+    </script>
+
+</body>
+
+</html>
