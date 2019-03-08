@@ -1,0 +1,37 @@
+body{
+    height: 100%;
+}
+
+.container{
+    height: 60em;
+    width: 65em;
+    padding: 5em;
+    display: grid;
+    grid-template: fr fr fr;
+}
+
+.question{
+    padding: 3em;
+    font-size: 5em; 
+    color: maroon;
+
+}
+
+.option{
+    width: 40em;
+    justify-content: center;
+    color: blue;
+    background-color: aqua;
+}
+
+.option:hover{
+    background: red;
+}
+
+.result{
+    font-size: 20em;
+};
+
+#timer-box{
+    display: inline;
+}
