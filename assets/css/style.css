@@ -1,37 +1,57 @@
-body{
-    height: 100%;
+html {
+    margin: 0;
 }
 
-.container{
-    height: 60em;
-    width: 65em;
-    padding: 5em;
+body {
+    height: 150vh;
+}
+
+.grid-container {
     display: grid;
-    grid-template: fr fr fr;
+    grid-template-areas: 
+                        "header header header header header"
+                        ". main main main sidebar-2"
+                        ". main main main .";
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
 }
 
-.question{
-    padding: 3em;
-    font-size: 5em; 
-    color: maroon;
-
+.item {
+    border: 2px black solid;
 }
 
-.option{
-    width: 40em;
-    justify-content: center;
-    color: blue;
-    background-color: aqua;
+.header {
+    grid-area: header;
 }
 
-.option:hover{
-    background: red;
+.sidebar-1 {
+    grid-area: sidebar-1;
 }
 
-.result{
-    font-size: 20em;
-};
-
-#timer-box{
-    display: inline;
+.main {
+    grid-area: main;
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+                        "opt1"
+                        "opt2"
+                        "opt3"
+                        "opt4"
+                        "opt5";
+    height: 30rem;
+    width: 45rem;
+    border: 2px blue solid;
+    margin: auto auto;
+}
+
+.opt {
+    padding: 1rem;
+}
+
+.sidebar-2 {
+    grid-area: sidebar-2;
+}
+

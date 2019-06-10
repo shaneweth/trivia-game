@@ -4,28 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quiz Fun Time Game Oh Yeah</title>
+    <title>Trivial Pursuit</title>
     <link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 <body>
-    <div id="timer-box"></div>
-    <div id="quiz-box" class="container">
-        <div class="title">Answer Questions Fun</div>
-        <div id="question" class="question"></div>
-        <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span> </label>
-        <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span> </label>
-        <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span> </label>
-        <label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span> </label>
-        
-        <!-- This btn event will be replaced by a timer or will disappear and reappear once the question has been answered -->
-        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
-
+    <div class="grid-container"> 
+        <header class="item header">Header</header>
+        <sidebar class="item sidebar-1">sidebar-1</sidebar>
+        <main class="item main">main
+            <div class="card-container">
+                <div class="opt opt1">Q: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias illum officia temporibus voluptas perferendis, porro reiciendis facere maiores vitae eaque corporis consectetur ipsum aliquam quas quisquam nostrum ipsam quos aliquid?</div>
+                <div class="opt opt2">Q: Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem facere excepturi error, pariatur incidunt sequi ipsam nulla voluptatum voluptatem delectus cum explicabo, similique?</div>
+                <div class="opt opt3">Q: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis mollitia ex voluptatum quam adipisci natus reiciendis laudantium laborum tempora exercitationem odit labore veritatis?</div>
+                <div class="opt opt4">Q: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis mollitia ex voluptatum quam adipisci natus reiciendis laudantium laborum tempora exercitationem odit labore veritatis?</div>
+                <div class="opt opt5">Q: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis mollitia ex voluptatum quam adipisci natus reiciendis laudantium laborum tempora exercitationem odit labore veritatis?</div>
+            </div>
+        </main>
+        <sidebar class="item sidebar-2">sidebar-2</sidebar>
     </div>
-    <div id="result" class="containerResult" style="display: none;">
-    </div>
-
-
-    <script src="questionArr.js"></script>
-    <script src="quizGame.js"></script>
 </body>
 </html>
